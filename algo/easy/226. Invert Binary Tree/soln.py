@@ -12,7 +12,7 @@ def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
         root.left, root.right = root.right, root.left # Make use of Python swap syntax
         invertTree(root.left)
         invertTree(root.right)
-    return root
+    return root  # Initial call stack will return the root of the tree
 
     """
     Cleaner Implementation
@@ -31,4 +31,4 @@ def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
     for node in [root.left, root.right]:
         if node: # Remove unnecessary call stacks (Slight improvement)
             invertTree(node)
-    return root
+    return root # Initial call stack will return the root of the tree
