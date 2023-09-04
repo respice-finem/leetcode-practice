@@ -9,3 +9,4 @@ The main source of questions that I will be referencing would be from <a href="h
 ### To Do:
 1. Read up more on binary search variants.
 2. Images and write up on each of the solution as if I were to explain to an interviewer.
+3. Once we build up a set of questions, write up on patterns to be observed and also generate
