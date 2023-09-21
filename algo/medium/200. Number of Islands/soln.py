@@ -1,3 +1,4 @@
+from collections import deque
 def numIslands(grid: List[List[str]]) -> int:
     """
     BFS Approach
