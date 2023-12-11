@@ -43,7 +43,6 @@ def wordBreak(s: str, wordDict: List[str]) -> bool:
             # i == len(word) - 1, checks for starters
             # dp[i - len(word)] can the word be built from there
             if i == len(word) - 1 or dp[i - len(word)]:
-                print(s[i - len(word) + 1: i + 1], i)
                 if s[i - len(word) + 1: i + 1] == word:
                     dp[i]= True
                     break
